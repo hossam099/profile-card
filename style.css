@@ -1,0 +1,112 @@
+/*css reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+html{
+    font-size: 65.3%;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(#ee6d0a 2px, #e5e5f7 2px);
+background-size: 40px 40px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    min-width: 35rem;
+    background-color: white;
+
+    
+    
+}
+.top{
+height: 10rem;
+background-color: #e5e5f7;
+opacity: 0.8;
+background-size: 10px 10px;
+background-image: repeating-linear-gradient(45deg, #ee6d0a 0, #ee6d0a 1px, #e5e5f7 0, #e5e5f7 50%);
+}
+
+.middle{
+    display: flex;
+    flex-direction: column; /* يخلي الصورة فوق النصوص */
+    align-items: center;    /* يخلي الصورة والنصوص في المنتصف أفقيًا */
+    text-align: center;     /* يخلي النصوص تحت الصورة متوسطة */
+    margin-top: -6rem;  
+    z-index: 1;
+
+}
+
+.pic{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 0.2rem solid #ee6d0a;
+}
+.tittle{
+    font-size: 2.2rem;
+}
+.dis_job{
+    font-size: 1.6rem;
+}
+.button{
+
+    display: flex;
+    margin-top: 3rem;
+    border-top: 0.2rem solid coral;
+
+}
+.icons{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.user_name{
+      font-size: 1rem;
+    text-align: center;
+    margin-top: .5rem;
+
+}
+.column{
+
+  flex: 1;
+    padding: 1.2rem;
+    display: flex;              /* نفس الكلاس */
+    flex-direction: column;     /* ← دي أهم خطوة */
+    align-items: center;        /* يخلي الكل في النص */
+    justify-content: center
+        
+}
+
+.column:nth-child(2){
+    border-right: .1rem solid #ee6d0a;
+    border-left: .1rem solid #ee6d0a;
+
+}
+
